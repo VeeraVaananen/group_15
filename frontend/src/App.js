@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
+import Temperature from './Temperature/temperature';
 
 
 //Created with FirebaseUI Example Code
 
 
 // Configure Firebase.
-firebase.initializeApp(firebaseConfig);
+if(!firebase.apps.length)  firebase.initializeApp(firebaseConfig);
 
 // Configure FirebaseUI.
 const uiConfig = {
@@ -51,6 +52,7 @@ function App() {
       <h1>My App</h1>
       <p>Welcome {firebase.auth().currentUser.displayName}! You are now signed-in!</p>
       <a onClick={() => firebase.auth().signOut()}>Sign-out</a>
+      <Temperature />
     </div>
   );
 }
