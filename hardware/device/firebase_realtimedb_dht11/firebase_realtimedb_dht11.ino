@@ -15,8 +15,8 @@
 #include <DHT.h>    // Install DHT11 Library and Adafruit Unified Sensor Library
 
 
-#define FIREBASE_HOST "product-design-group-15-default-rtdb.europe-west1.firebasedatabase.app" //Without http:// or https:// schemes
-#define FIREBASE_AUTH "6pKTRodxlzVxXa0OjyUdbpGNySaKQPGfLaMb95Wy"
+#define FIREBASE_HOST "****" //Without http:// or https:// schemes
+#define FIREBASE_AUTH "****"
 #define WIFI_SSID "****"
 #define WIFI_PASSWORD "****"
 
